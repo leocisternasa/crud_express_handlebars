@@ -1,0 +1,29 @@
+
+<div class="container d-flex justify-content-center ">
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Pelicula</th>
+      <th scope="col">Sinopsis</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+{{#each peliculas}}
+   
+    <tr>
+      <th scope="row">{{this.id}}</th>
+      <td>{{this.titulo}}</td>
+      <td>{{this.sinopsis}}</td>
+      <td><a href="/actualizar/{{this.id}}">Actualizar</a>         <a href="/delete/{{this.id}}">Eliminar</a></td>
+    </tr>
+    
+{{/each}}
+
+
+      
+    
+  </tbody>
+</table>
+</div>
